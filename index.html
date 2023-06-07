@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Wedding of Marili & Eitan</title>
+  <style>
+    /* CSS for the body */
+    body {
+      background-image: url('https://images.unsplash.com/photo-1543157145-f78c636d023d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=869&q=80');
+      background-repeat: repeat;
+      background-size: cover;
+      font-family: 'Arial', sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+    
+    /* CSS for the fullscreen bar */
+    .tab-bar {
+      background-color: rgba(255, 255, 255, 0.7);
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      padding: 10px;
+      z-index: 999;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    }
+    
+    /* CSS for the tab buttons */
+    .tab-button {
+      background-color: transparent;
+      border: none;
+      color: #333;
+      padding: 10px 20px;
+      text-align: center;
+      text-decoration: none;
+      display: inline-block;
+      cursor: pointer;
+      font-family: 'Arial', sans-serif;
+      font-size: 16px;
+      border-radius: 5px;
+      margin-right: 10px;
+      transition: color 0.3s ease;
+    }
+    
+    /* CSS for the active tab button */
+    .active-button {
+      color: #fff;
+      background-color: #333;
+    }
+    
+    /* CSS for the tab contents */
+    .tab-content {
+      display: none;
+      font-size: 18px;
+      padding: 20px 20px 20px; /* Adjusted top padding */
+      background-color: rgba(255, 255, 255, 0.9);
+      border-radius: 10px;
+      margin-top: 80px;
+      color: #333;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    }
+    
+    /* CSS for the heading */
+    h1 {
+      text-align: center;
+      color: #333;
+      margin-top: 100px;
+      font-size: 36px;
+      background-color: rgba(255, 255, 255, 0.7); /* Semitransparent background */
+      padding: 10px;
+      border-radius: 10px;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    }
+    
+    /* CSS for the paragraph */
+    p {
+      color: #666;
+      line-height: 1.5;
+    }
+    
+    /* CSS for the date and location */
+    .details {
+      text-align: center;
+      margin-top: 30px;
+    }
+    
+    /* CSS for the picture */
+    .picture {
+      text-align: left;
+      margin-top: 10px;
+    }
+    
+    .picture img {
+      max-width: 40%;
+      border-radius: 10px;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    }
+  </style>
+</head>
+<body>
+  <h1>Marili & Eitan</h1>
+  
+  <!-- Fullscreen tab bar -->
+  <div class="tab-bar">
+    <button class="tab-button active-button" onclick="openTab(event, 'Home')">Home</button>
+    <button class="tab-button" onclick="openTab(event, 'About')">About Us</button>
+    <button class="tab-button" onclick="openTab(event, 'Events')">Events</button>
+    <button class="tab-button" onclick="openTab(event, 'RSVP')">RSVP</button>
+  </div>
+  
+  <!-- Tab contents -->
+  <div id="Home" class="tab-content">
+    <h2>Celebrate with us!</h2>
+    <p>Join us at the Chabad of Great Neck on September 3rd at 4pm.</p>
+    <p>We can't wait to see you!</p>
+    <div class="picture">
+        <img src="https://lh3.googleusercontent.com/pw/AJFCJaVZLeKRRN7k-iKU2o-5XeJ0dE0OpfEgsLekfyccCXLQNtiHXfgRhMpcbsVDVIjMmfZ-5KcrBzZn5afvbCWimVkqfX0sGXfUuxPeqXkrFgTrsPEOu6idCSM5PguqjtroFSS6uKHsDQKKF_7z3QObwmyhwOqw1O8Q9WSMC1zAIYUk7Iuuxm0AMHUb3EZWlW7FqSBMx8WPFi02tNDKvYzwbbI2lfqX7yTN6l837wQpxkYYFd2z43bRxXNWs0FWn4Du2sEcH5QfU1a89o6EYrh9rXEV7tpKoKZ-dI_bLqFAVeckZWw6rtq2eW0xVtGn4CYhSOVay2VYO34_ShjPcWojrQ7Xi_fqV1yfC193UNpEYq6FvCbzH1Dt44CE6tWSr2paCdkcLDvkIENV-ST-SsX6UhiCxXc2sHhzqkuerlVRVV3VDhw-jOcwNgzJKW2adYtx3q_wdmpWtehvs4hvstk3FHTf_mmrg9P05aPzXW1qDfUHnipyC26LCfQ3SjUfgng3vu3rocDSl-i9NQVKcmVLKCz5etH5HPSQRfIE9xg111RdPpY_ieM25CGAlQ1aNL2gnggOwARV-egoJ9Ybktgem3mZoD9J4j69_0-iUwUms-R7pWreHvZ_CwC4v1OfCIb-HellvDPa_7pvSQLs66yShVLTbOWucVYMzhOneAANXm0rcICt8TEPrTimo9TQOCSBw2ypG79bAhcSaA2rm-pSZynJI2C2DulUiZYBnzg08a1WItTieOi4en5bfZumg4qoeuixW6BHnFo99bTkI92PISuqe9vJ7nOnUdWEINVT0yxCjJ_ny8WohiN-1qmD-V_UmklCBLUxTGdiE7Y8KkW-CC9uGbcvgisHgzveYQrDyN_YSUEAhX41Mht0fAqYIMPSq023Hzw7S-kjl6C8EV97zJdvag=w677-h902-s-no?authuser=0" alt="Our Picture">
+    </div>
+  </div>
+  
+  <div id="About" class="tab-content">
+    <h2>About Us</h2>
+    <p>Learn more about our love story and journey together.</p>
+  </div>
+  
+  <div id="Events" class="tab-content">
+    <h2>Events</h2>
+    <p>Discover the schedule of events for our wedding celebration.</p>
+  </div>
+  
+  <div id="RSVP" class="tab-content">
+    <h2>Celebrate with us!</h2>
+    <p>Join us at the Chabad of Great Neck on September 3rd at 4pm.</p>
+    <p>We can't wait to see you!</p>
+    <div class="picture">
+        <img src="https://lh3.googleusercontent.com/pw/AJFCJaVZLeKRRN7k-iKU2o-5XeJ0dE0OpfEgsLekfyccCXLQNtiHXfgRhMpcbsVDVIjMmfZ-5KcrBzZn5afvbCWimVkqfX0sGXfUuxPeqXkrFgTrsPEOu6idCSM5PguqjtroFSS6uKHsDQKKF_7z3QObwmyhwOqw1O8Q9WSMC1zAIYUk7Iuuxm0AMHUb3EZWlW7FqSBMx8WPFi02tNDKvYzwbbI2lfqX7yTN6l837wQpxkYYFd2z43bRxXNWs0FWn4Du2sEcH5QfU1a89o6EYrh9rXEV7tpKoKZ-dI_bLqFAVeckZWw6rtq2eW0xVtGn4CYhSOVay2VYO34_ShjPcWojrQ7Xi_fqV1yfC193UNpEYq6FvCbzH1Dt44CE6tWSr2paCdkcLDvkIENV-ST-SsX6UhiCxXc2sHhzqkuerlVRVV3VDhw-jOcwNgzJKW2adYtx3q_wdmpWtehvs4hvstk3FHTf_mmrg9P05aPzXW1qDfUHnipyC26LCfQ3SjUfgng3vu3rocDSl-i9NQVKcmVLKCz5etH5HPSQRfIE9xg111RdPpY_ieM25CGAlQ1aNL2gnggOwARV-egoJ9Ybktgem3mZoD9J4j69_0-iUwUms-R7pWreHvZ_CwC4v1OfCIb-HellvDPa_7pvSQLs66yShVLTbOWucVYMzhOneAANXm0rcICt8TEPrTimo9TQOCSBw2ypG79bAhcSaA2rm-pSZynJI2C2DulUiZYBnzg08a1WItTieOi4en5bfZumg4qoeuixW6BHnFo99bTkI92PISuqe9vJ7nOnUdWEINVT0yxCjJ_ny8WohiN-1qmD-V_UmklCBLUxTGdiE7Y8KkW-CC9uGbcvgisHgzveYQrDyN_YSUEAhX41Mht0fAqYIMPSq023Hzw7S-kjl6C8EV97zJdvag=w677-h902-s-no?authuser=0" alt="Our Picture">
+    </div>
+  </div>
+  
+  <script>
+    // Function to open the selected tab
+    function openTab(evt, tabName) {
+      var i, tabContent, tabButton;
+      
+      // Hide all tab content
+      tabContent = document.getElementsByClassName("tab-content");
+      for (i = 0; i < tabContent.length; i++) {
+        tabContent[i].style.display = "none";
+      }
+      
+      // Remove the "active-button" class from all tab buttons
+      tabButton = document.getElementsByClassName("tab-button");
+      for (i = 0; i < tabButton.length; i++) {
+        tabButton[i].className = tabButton[i].className.replace(" active-button", "");
+      }
+      
+      // Show the selected tab and set the corresponding button as active
+      document.getElementById(tabName).style.display = "block";
+      evt.currentTarget.className += " active-button";
+    }
+    
+    // Set the initial active tab
+    document.getElementById("Home").style.display = "block";
+  </script>
+</body>
+</html>
